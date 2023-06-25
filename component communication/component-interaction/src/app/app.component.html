@@ -1,0 +1,44 @@
+<h1>Hellow Angular</h1>
+
+<!--String Interpolation-->
+<h1>{{ pageTitle }}</h1>
+
+<!--Property Binding-->
+<div class="image">
+  <img [src]="imageUrl" alt="new image" />
+</div>
+
+<!--Event Binding-->
+<div class="count">
+  <h5>{{ count }}</h5>
+  <button (click)="incrementCount()">➕</button>
+  <button (click)="decrementCOunt()">⛔</button>
+</div>
+
+<!--Two Way Binding-->
+<div class="form">
+  <input type="text" [(ngModel)]="name" />
+  <p>Welcome {{ name }}</p>
+</div>
+
+<!--Spilliting Two Way Binding-->
+<div class="form">
+  <input
+    type="text"
+    [(ngModel)]="userName"
+    (ngModelChange)="greetVishwas($event)"
+  />
+  <p>Welcome {{ userName }}</p>
+</div>
+
+<!-- - Getters and Setters-->
+<div class="form">
+  <input type="text" [(ngModel)]="customername" />
+  <p>Welcome {{ customername }}</p>
+</div>
+
+<!--viewChild Decorator-->
+<div class="form">
+  <input type="text" [(ngModel)]="name" #nameRef />
+  <p>Welcome {{ name }}</p>
+</div>

@@ -1,0 +1,8 @@
+<h1>Parent Child RelationShip</h1>
+<div>
+  <button (click)="userLoggedIn = true">Login</button>
+  <button (click)="userLoggedIn = false">LogOut</button>
+  {{ userLoggedIn }}
+</div>
+
+<app-child [loggedIn]="userLoggedIn"></app-child>

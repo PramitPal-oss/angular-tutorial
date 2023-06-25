@@ -1,0 +1,8 @@
+div img {
+  height: 300px;
+  object-fit: cover;
+}
+
+.form {
+  margin-top: 10px;
+}
